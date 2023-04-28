@@ -49,21 +49,17 @@ function Footer() {
             <div className="footer__part-1">
                 <div className="media">
                     <img src={Logo} alt=""/>
-                    <ul>
-                        <li><a href="#b"><i className="bi bi-instagram"></i> Instagram</a></li>
-                        <li><a href="#b"><i className="bi bi-whatsapp"></i> Whatsapp</a></li>
-                    </ul>
                 </div>
                 <div className="support">
                     <h3>Contact & Support</h3>
                     <ul>
                         <li><a href="#b"><i className="bi"></i>+33 7 80 70 82 87</a></li>
-                        <li><a href="#b"><i className="bi"></i>info@homi.com</a></li>
+                        <li><a href="#b"><i className="bi"></i>info@skina.com</a></li>
                         <li><a href="#b"><i className="bi"></i>Lun-Ven 9H00-18H00</a></li>
                     </ul>
                 </div>
                 <div className="legal">
-                    <h3>Legal information</h3>
+                    <h3>Legals</h3>
                     <ul>
                         <li><a href="#b"><i className="bi"></i>General Sales Conditions</a></li>
                         <li><a href="#b"><i className="bi"></i>Privacy Policy</a></li>
@@ -80,7 +76,7 @@ function Footer() {
                 </div>
             </div>
             <div className="footer__part-2">
-                <p>© 2023 Homi | All rights reserved.</p>
+                <p>© 2023 Skina | All rights reserved.</p>
             </div>
         </div>
     );

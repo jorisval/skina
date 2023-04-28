@@ -403,7 +403,7 @@ const LayoutsStyle = createGlobalStyle`
         margin-top: ${theme.layout.spaceBetween90};
         color: ${theme.colors.paragraph};
         border-top: 1px rgba(12, 82, 89, 0.20) solid;
-        background-color: ${theme.colors.backgroundColor2};
+        background-color: #D9D9D9;
 
         &__part-1 {
             display: flex;
@@ -455,6 +455,7 @@ const LayoutsStyle = createGlobalStyle`
             input[type="email"] {
                 font-size: 0.875rem;
                 color: ${theme.colors.paragraph};
+                background-color: #D9D9D9;
                 padding: 0.25rem 0.5rem;
                 border: 2px ${theme.colors.button} solid;
                 border-radius: 2rem 0 0 2rem;
