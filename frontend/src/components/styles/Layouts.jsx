@@ -26,7 +26,11 @@ const LayoutsStyle = createGlobalStyle`
         padding: 0 ${theme.layout.marginLeftRight};
         margin: -0.5rem;
         margin-bottom: 0;
+        max-height: 6.25rem;
         font-size: ${theme.typography.navFontSize};
+        @media (min-width: ${theme.breakpoints.up.medium}) {
+            max-height: 7.5rem;
+        }
         .menu-md {
                 display: block;
 
@@ -45,37 +49,37 @@ const LayoutsStyle = createGlobalStyle`
                 cursor: pointer;
                 transition: all 0.6s ease-in-out;
 
-            div {
-                height: 2px;
-                background-color: ${theme.colors.primary};
-                display: block;
-                margin: 4px;
-                transition: all 0.6s ease-in-out;
-            }
-
-            &.active {
-                left: calc(100vw - ${theme.layout.menuTabWidth});
-                transition: all 600ms ease-in-out;
-                background-color: ${theme.colors.paragraph};
-                position: fixed;
-
-                #icon-bar-one {
-                transform: translateY(4px) rotate(-135deg);
-                transition: all 0.6s ease-in-out;
-                background-color: ${theme.colors.secondary};
+                div {
+                    height: 2px;
+                    background-color: ${theme.colors.primary};
+                    display: block;
+                    margin: 4px;
+                    transition: all 0.6s ease-in-out;
                 }
 
-                #icon-bar-two {
-                opacity: 0;
-                transition: 0.4s ease;
-                }
+                &.active {
+                    left: calc(100vw - ${theme.layout.menuTabWidth});
+                    transition: all 600ms ease-in-out;
+                    background-color: ${theme.colors.paragraph};
+                    position: fixed;
 
-                #icon-bar-three {
-                transform: translateY(-8px) rotate(-45deg);
-                transition: all 0.6s ease-in-out;
-                background-color: ${theme.colors.secondary};
+                    #icon-bar-one {
+                    transform: translateY(4px) rotate(-135deg);
+                    transition: all 0.6s ease-in-out;
+                    background-color: ${theme.colors.secondary};
+                    }
+
+                    #icon-bar-two {
+                    opacity: 0;
+                    transition: 0.4s ease;
+                    }
+
+                    #icon-bar-three {
+                    transform: translateY(-8px) rotate(-45deg);
+                    transition: all 0.6s ease-in-out;
+                    background-color: ${theme.colors.secondary};
+                    }
                 }
-            }
             }
 
             &__hide {
@@ -119,9 +123,10 @@ const LayoutsStyle = createGlobalStyle`
 
         &__logo {
             margin-right: 0%;
-            padding: 20px;
+            padding: 4px;
             text-align: center;
             @media (min-width: ${theme.breakpoints.up.medium}) {
+                padding: 20px;
                 padding-left: 0;
                 margin-right: 10%;
             }
@@ -129,9 +134,9 @@ const LayoutsStyle = createGlobalStyle`
                 margin-right: 30%;
             }
             img {
-                width: 80%;
+                height:80%;
                 @media (min-width: ${theme.breakpoints.up.large}) {
-                    width: 100%;
+                    height:100%;
                 }
             }
         }
@@ -144,6 +149,7 @@ const LayoutsStyle = createGlobalStyle`
 
             @media (min-width: ${theme.breakpoints.up.medium}) {
                 display: block;
+                margin-top: 1.25rem;
             }
             @media (min-width: ${theme.breakpoints.up.xlarge}) {
                 font-size: 1rem;
@@ -156,11 +162,11 @@ const LayoutsStyle = createGlobalStyle`
             margin: 0px;
             padding: 0px;
 
-            .active {
-                a {
-                    border-bottom: 2px solid ${theme.colors.secondary};
+                .active {
+                    a {
+                        color: ${theme.colors.nav};
+                    }
                 }
-            }
             }
 
             li {
@@ -173,7 +179,7 @@ const LayoutsStyle = createGlobalStyle`
                 padding: 0 0 0.25rem 0;
 
                 &:hover {
-                    border-bottom: 2px solid ${theme.colors.secondary};
+                    color: ${theme.colors.nav};
                 }
             }
         }
@@ -181,15 +187,18 @@ const LayoutsStyle = createGlobalStyle`
         &__cart {
             text-align: center;
             padding: 17px 0;
+            @media (min-width: ${theme.breakpoints.up.medium}) {
+                margin-top: 1.25rem;
+            }
         }
 
         .bi-cart3 {
-            font-size: 1rem;
+            font-size: 1.125rem;
             color: ${theme.colors.primary};
             cursor: pointer;
 
             @media (min-width: ${theme.breakpoints.up.xlarge}) {
-            font-size: 1.25rem;
+            font-size: 1.5rem;
             }
         }
 
@@ -360,7 +369,7 @@ const LayoutsStyle = createGlobalStyle`
         .menu-md {
             &__icon {
                 div {
-                    background-color: ${theme.colors.white};
+                    background-color: ${theme.colors.secondary};
                 }
             }
         }
@@ -368,6 +377,14 @@ const LayoutsStyle = createGlobalStyle`
             ul {
                 a {
                     color: ${theme.colors.nav};
+                    &:hover {
+                        color: ${theme.colors.white};
+                    }
+                }
+                .active {
+                    a {
+                        color: ${theme.colors.white};
+                    }
                 }
             }
         }

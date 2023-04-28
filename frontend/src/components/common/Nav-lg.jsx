@@ -9,10 +9,10 @@ function NavLg() {
             <nav>
                 <ul className="">
                     <li className={ activePage === "home" ? "active" : "" }><Link to="/">Home</Link></li>
-                    <li className={ activePage === "faq" ? "active" : "" }><Link to="/faq">About us</Link></li>
-                    <li className={ activePage === "catalog" ? "active" : "" }><Link to="/catalog">Catalog</Link></li>
-                    <li className={ activePage === "blog" ? "active" : "" }><Link to="/blog">Blog</Link></li>
-                    <li className={ activePage === "contact" ? "active" : "" }><Link to="/contact">Contact us</Link></li>
+                    <li className={ activePage === "catalog" ? "active" : "" }><Link to="/catalog">Products</Link></li>
+                    <li className={ activePage === "about" ? "active" : "" }><Link to="/faq">About</Link></li>
+                    <li className={ activePage === "faq" ? "active" : "" }><Link to="/faq">FAQ</Link></li>
+                    <li className={ activePage === "contact" ? "active" : "" }><Link to="/contact">Contact</Link></li>
                 </ul>
             </nav>
         </div>

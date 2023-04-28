@@ -1,12 +1,12 @@
 import { useContext, useEffect } from "react";
-import CatalogView from "../layout/catalog-view";
+//import CatalogView from "../layout/catalog-view";
 import { HeaderContext } from "../utils/context";
 import Hero from "../../assets/images/hero_image.png";
-import BeneFirst from "../../assets/images/benefits1-large.png";
-import BeneSecond from "../../assets/images/benefits2-large.png";
-import PostImage1 from "../../assets/images/nordic.png";
-import PostImage2 from "../../assets/images/kruzo.png";
-import PostImage3 from "../../assets/images/ergonomic.png";
+//import BeneFirst from "../../assets/images/benefits1-large.png";
+//import BeneSecond from "../../assets/images/benefits2-large.png";
+//import PostImage1 from "../../assets/images/nordic.png";
+//import PostImage2 from "../../assets/images/kruzo.png";
+//import PostImage3 from "../../assets/images/ergonomic.png";
 import { Link } from "react-router-dom";
 import { HomeContainer } from "../styles/Home";
 
@@ -30,7 +30,7 @@ function Home() {
                 <div className="hero__image">
                     <img src={Hero} alt=""/>
                 </div>
-            </div>
+            </div>{/*
             <CatalogView id="catalogView"/>
             <div className="benefits-one">
                 <div className="benefits-one__image">
@@ -126,7 +126,7 @@ function Home() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>*/}
         </HomeContainer>
     )
 }

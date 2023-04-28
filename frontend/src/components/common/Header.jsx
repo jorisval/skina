@@ -1,7 +1,7 @@
 import Cart from "./Cart";
 import MenuMd from "./Menu-md";
 import NavLg from "./Nav-lg";
-import WhiteLogo from "../../assets/images/homi_logo.png";
+import WhiteLogo from "../../assets/images/white-logo.png";
 import ColoredLogo from "../../assets/images/colored-logo.png";
 import { HeaderContext } from "../utils/context";
 import { useContext } from "react";

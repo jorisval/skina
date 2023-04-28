@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Logo from "../../assets/images/logo-colored.png";
+import Logo from "../../assets/images/colored-logo.png";
 import ThankYouPopup from "../pages/Thank-you-newsletter";
 
 function Footer() {
