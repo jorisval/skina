@@ -22,7 +22,6 @@ animation: ${fadeIn} 1s ease-in;
         justify-content: space-between;
         margin: 0 -8px;
         padding-right: ${theme.layout.spaceBetween60};
-        padding-bottom: ${theme.layout.spaceBetween90};
     }
     &__text {
         border-radius: 0.5rem;
@@ -32,7 +31,7 @@ animation: ${fadeIn} 1s ease-in;
         margin: auto;
         text-align: center;
         @media (min-width: ${theme.breakpoints.up.large}) {
-            padding-top: 8.75rem;
+            padding-top: 7.5rem;
             margin: 0 0 0 ${theme.layout.marginLeftRight};
             width: 40%;
             max-width: 33rem;
@@ -43,9 +42,10 @@ animation: ${fadeIn} 1s ease-in;
             color: ${theme.colors.white};
             font-size: 1.5rem;
             line-height: 2rem;
+            font-weight: 400;
             margin-bottom: ${theme.layout.spaceBetween30};
             @media (min-width: ${theme.breakpoints.up.large}) {
-                font-size: 2.375rem;
+                font-size: 2rem;
                 line-height: 3.2rem;
                 text-align: left;
             }
@@ -59,8 +59,12 @@ animation: ${fadeIn} 1s ease-in;
             @media (min-width: ${theme.breakpoints.up.large}) {
                 text-align: left;
             }
+            p {
+                
+            }
         }
         .cta-row {
+            font-size: 0.875rem;
             display: flex;
             justify-content: center;
             @media (min-width: ${theme.breakpoints.up.large}) {
@@ -74,13 +78,13 @@ animation: ${fadeIn} 1s ease-in;
                 font-weight: 300;
                 &.view {
                     color: ${theme.colors.button};
-                    background-color: ${theme.colors.secondary};
-                    border: 2px solid ${theme.colors.secondary};
+                    background-color: ${theme.colors.white};
+                    border: 2px solid ${theme.colors.white};
                 }
                 :hover {
                     color: ${theme.colors.white};
-                    background-color: ${theme.colors.button};
-                    border: 2px solid ${theme.colors.button};
+                    background-color: ${theme.colors.secondary};
+                    border: 2px solid ${theme.colors.secondary};
                 }
             }
         }
@@ -88,12 +92,14 @@ animation: ${fadeIn} 1s ease-in;
     }
     &__image {
         margin: auto;
+        margin-bottom: -10rem;
         @media (min-width: ${theme.breakpoints.up.medium}) {
             max-width: 60%;
+            margin-bottom: -13.75rem;
         }
         @media (min-width: ${theme.breakpoints.up.large}) {
             max-width: 50%;
-            padding-top: 8.75rem;
+            padding-top: 7.5rem;
             margin: none;
         }
         img {

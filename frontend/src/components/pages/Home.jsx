@@ -20,11 +20,11 @@ function Home() {
         <HomeContainer className="home">
             <div className="hero">
                 <div className="hero__text">
-                    <h1>Modern Interior Design Studio</h1>
-                    <p className="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h1>Upgrade Your Skin Care Routine</h1>
+                    <p className="subtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. </p>
                     <div className="cta-row">
-                        <Link to='#catalogView' className="cta-button view">Shop Now</Link>
-                        <Link to='/catalog' className="cta-button">Explore</Link>
+                        <Link to='#catalogView' className="cta-button">GET STARTED</Link>
+                        <Link to='/catalog' className="cta-button view">ORDER NOW</Link>
                     </div>
                 </div>
                 <div className="hero__image">
