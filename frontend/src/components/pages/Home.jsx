@@ -3,7 +3,7 @@ import { useContext, useEffect } from "react";
 import { HeaderContext } from "../utils/context";
 import Hero from "../../assets/images/hero_image.png";
 import SectionOneImage from "../../assets/images/benefits-image-1.png";
-//import BeneSecond from "../../assets/images/benefits2-large.png";
+import SectionTwoImage from "../../assets/images/benefits-image-2.png";
 //import PostImage1 from "../../assets/images/nordic.png";
 //import PostImage2 from "../../assets/images/kruzo.png";
 //import PostImage3 from "../../assets/images/ergonomic.png";
@@ -55,6 +55,16 @@ function Home() {
                     <p>User is receiving duplicates for each alert message, ranging from 2-5 additional messages on top of the original (and correct) alert to both email and text</p>
                 </div>
             </div>
+            <div className="section-two">
+                <div className="section-two__image">
+                    <img src={SectionTwoImage} alt=""/>
+                </div>
+                <div className="section-two__text">
+                    <h3>EARLY BIRDS : AN UNMISSABLE OFFER</h3>
+                    <p>What do you want to do when you grow up?</p>
+                    <Link to='/catalog' className="cta-button">ORDER NOW</Link>
+                </div>
+            </div>
             {/*
             <CatalogView id="catalogView"/>
             <div className="benefits-one">
@@ -87,35 +97,6 @@ function Home() {
                             <p>Recherche produits, recherche de marchés inexploités, copywriting, boutique shopify</p>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div className="benefits-two">
-                <div className="benefits-two__image">
-                    <img src={BeneSecond} alt=""/>
-                </div>
-                <div className="benefits-two__text">
-                    <h2>We Help You Make Modern Interior Design</h2>
-                    <p>Recherche de produits, recherche de marchés inexploités, copywriting, boutique shopify, 
-                        vidéos pour Facebook ads et Tiktok ads etc... Nous nous occupons de tout pour vous.</p>
-                    <div className="four-benefits">
-                        <div className="four-benefits__first">
-                            <span className="bi bi-check2-circle"></span>
-                            <p>Recherche produits, recherche de marchés</p>
-                        </div>
-                        <div className="four-benefits__second">
-                            <span className="bi bi-check2-circle"></span>
-                            <p>Recherche produits, recherche de marchés</p>
-                        </div>
-                        <div className="four-benefits__third">
-                            <span className="bi bi-check2-circle"></span>
-                            <p>Recherche produits, recherche de marchés</p>
-                        </div>
-                        <div className="four-benefits__fourth">
-                            <span className="bi bi-check2-circle"></span>
-                            <p>Recherche produits, recherche de marchés</p>
-                        </div>
-                    </div>
-                    <Link to='/catalog' className="cta-button">Explore</Link>
                 </div>
             </div>
             <div className="blog">
