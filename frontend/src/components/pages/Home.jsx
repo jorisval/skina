@@ -2,7 +2,7 @@ import { useContext, useEffect } from "react";
 //import CatalogView from "../layout/catalog-view";
 import { HeaderContext } from "../utils/context";
 import Hero from "../../assets/images/hero_image.png";
-//import BeneFirst from "../../assets/images/benefits1-large.png";
+import SectionOneImage from "../../assets/images/benefits-image-1.png";
 //import BeneSecond from "../../assets/images/benefits2-large.png";
 //import PostImage1 from "../../assets/images/nordic.png";
 //import PostImage2 from "../../assets/images/kruzo.png";
@@ -30,7 +30,32 @@ function Home() {
                 <div className="hero__image">
                     <img src={Hero} alt=""/>
                 </div>
-            </div>{/*
+            </div>
+            <div className="section-one">
+                <h2>INGREDIENTS</h2>
+                <div className="section-one__part2">
+                    <div className="section-one-2-part1">
+                        <h4>Organic Cotton</h4>
+                        <p>The PorchCam options to select programs for your PorchCam's behavior don't appear sometimes when you're coming from the recorded videos tab</p>
+                        <h4>Hydrating Serum</h4>
+                        <p>User reports that some of their video thumbnails rotated 90 degrees counter-clockwise, but the videos themselves are fine</p>
+                    </div>
+                    <div className="section-one-2-part2">
+                        <img src={SectionOneImage} alt="" />
+                    </div>
+                    <div className="section-one-2-part3">
+                        <h4>Carbon Active</h4>
+                        <p>Past recorded videos have to sometimes be tapped twice to open on the Android app (though single-tap works most of the time)</p>
+                        <h4>Oil Control Essence</h4>
+                        <p>The PorchCam siren will sometimes go off for about 2-5 seconds when there isn't anything that's triggering the alarm (no motion detected, etc.)</p>
+                    </div>
+                </div>
+                <div>
+                    <h4>15 minutes a week, All your skin needs, Hydratation, Purity, Oil control.</h4>
+                    <p>User is receiving duplicates for each alert message, ranging from 2-5 additional messages on top of the original (and correct) alert to both email and text</p>
+                </div>
+            </div>
+            {/*
             <CatalogView id="catalogView"/>
             <div className="benefits-one">
                 <div className="benefits-one__image">

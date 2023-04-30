@@ -108,6 +108,51 @@ animation: ${fadeIn} 1s ease-in;
     }
 
 }
+.section-one {
+    margin: 0 ${theme.layout.marginLeftRight};
+    margin-top: 12rem;
+    text-align: center;
+    color: ${theme.colors.paragraph};
+    @media (min-width: ${theme.breakpoints.up.medium}) {
+        margin-top: 15.75rem;
+    }
+    h4 {
+        margin-bottom: 0;
+    }
+    p {
+        margin-top: 0.5rem;
+        margin-bottom: 2rem;
+    }
+    &__part2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @media (min-width: ${theme.breakpoints.up.medium}) {
+            flex-direction: row;
+        }
+        .section-one-2-part1 {
+            @media (min-width: ${theme.breakpoints.up.medium}) {
+                text-align: right;
+            }
+        }
+        .section-one-2-part2 {
+            width: 80%;
+            @media (min-width: ${theme.breakpoints.up.medium}) {
+                width: 40%;
+            }
+            img {
+                @media (max-width: ${theme.breakpoints.down.medium}) {
+                    width: 200px;
+                }
+            }
+        }
+        .section-one-2-part3 {
+            @media (min-width: ${theme.breakpoints.up.medium}) {
+                text-align: left;
+            }
+        }
+    }
+}
 .benefits-one {
     margin: 0 ${theme.layout.marginLeftRight};
     margin-top: ${theme.layout.spaceBetween90};
