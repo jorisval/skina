@@ -1,5 +1,5 @@
 import { useContext, useEffect } from "react";
-//import CatalogView from "../layout/catalog-view";
+import CatalogView from "../layout/catalog-view";
 import { HeaderContext } from "../utils/context";
 import Hero from "../../assets/images/hero_image.png";
 import SectionOneImage from "../../assets/images/benefits-image-1.png";
@@ -65,8 +65,8 @@ function Home() {
                     <Link to='/catalog' className="cta-button">ORDER NOW</Link>
                 </div>
             </div>
+            <CatalogView className="products" id="catalogView"/>
             {/*
-            <CatalogView id="catalogView"/>
             <div className="benefits-one">
                 <div className="benefits-one__image">
                     <img src={BeneFirst} alt=""/>

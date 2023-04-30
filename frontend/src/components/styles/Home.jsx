@@ -159,6 +159,7 @@ animation: ${fadeIn} 1s ease-in;
     padding: 0 ${theme.layout.marginLeftRight};
     margin: 0 -0.5rem;
     margin-top: 12rem;
+    margin-bottom: ${theme.layout.spaceBetween60};
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -169,6 +170,7 @@ animation: ${fadeIn} 1s ease-in;
         flex-direction: row;
         text-align: left;
         margin-top: 13.5rem;
+        margin-bottom: 9.375rem;
     }
     &__image {
         width: 100%;

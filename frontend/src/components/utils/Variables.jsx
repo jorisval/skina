@@ -16,7 +16,7 @@ const theme = {
       transparentBackground: "rgba(0,0,0,0.5)",
       backgroundColor1: "rgba(86,111,107,1)",
       backgroundColor2: "rgba(86,111,107,0)",
-      backgroundColor3: "#F0F2F1",
+      backgroundColor3: "rgba(109, 125, 139, 0.2)",
     },
   
     typography: {
