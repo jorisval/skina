@@ -61,6 +61,7 @@ export const ProductContainer = styled.div`
 
             h2 {
                 font-size: 1.5rem;
+                font-weight: 500;
                 margin-top: 1rem;
                 color: ${theme.colors.primary};
 
@@ -81,7 +82,7 @@ export const ProductContainer = styled.div`
                 }
 
                 span {
-                    color: ${theme.colors.primary};
+                    color: ${theme.colors.secondary};
                     font-size: 1.25rem;
                 }
             }

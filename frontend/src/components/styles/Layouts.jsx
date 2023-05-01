@@ -13,7 +13,7 @@ const fadeIn = keyframes`
 const LayoutsStyle = createGlobalStyle`
     body {
         font-familly: ${theme.typography.primaryFontFamily};
-        background-color: ${theme.colors.backgroundColor3};
+        background-color: ${theme.colors.f6};
     }
     p {
         font-size: 1rem;
