@@ -23,7 +23,7 @@ export const SkeletonLoader = styled.div`
     width: 14.375rem;
     height: 18rem;
     border-radius: 0.625rem;
-    background-color: #f0f0f0;
+    background-color: ${theme.colors.backgroundColor3};
     background-image: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
     background-size: 200% 100%;
     background-repeat: no-repeat;
@@ -32,7 +32,7 @@ export const SkeletonLoader = styled.div`
     margin-bottom: 2.1875rem;
     padding-bottom: 0.9375rem;
     @media (min-width: ${theme.breakpoints.up.medium}) {
-        width: 20rem;
+        width: 16rem;
         height: 25.875rem;
         padding-bottom: 1.875rem;
     }
@@ -64,14 +64,11 @@ export const CatalogContainer = styled.div`
         }
     }
     .services-section.catalog-services {
-        margin-top: ${theme.layout.spaceBetween10};
-        margin: 0 ${theme.layout.marginLeftRight}; 
+        margin: 0 ${theme.layout.marginLeftRight};
+        margin-top: ${theme.layout.spaceBetween30}; 
         text-align: center;
         @media (min-width: ${theme.breakpoints.up.medium}) {
-            margin-top: ${theme.layout.spaceBetween20};
-        }
-        a {
-            text-decoration: none;
+            margin-top: ${theme.layout.spaceBetween90};
         }
         .services {
             display: flex;
@@ -80,69 +77,53 @@ export const CatalogContainer = styled.div`
             justify-content: space-between;
             .service {
                 width: 14.375rem;
-                border-radius: 0.625rem;
                 text-align: center;
                 font-weight: 400;
                 font-size: 1.125rem;
-                background-color: ${theme.colors.backgroundColor3};
                 padding-bottom: 0.9375rem;
                 margin: auto;
-                margin-bottom: 2.1875rem;
-                position: relative;
+                margin-bottom: 1.25rem;
                 @media (min-width: ${theme.breakpoints.up.medium}) {
-                    width: 20rem;
+                    width: 16rem;
                     font-size: 1.25rem;
                     padding-bottom: 1.875rem;
                 }
                 a {
                     text-decoration: none;
                 }
-                &__content {
-                    position: relative;
-                    z-index: 2;
-                    margin-bottom: 0.9375rem;
+                &__image {
+                    padding: 0.5rem 0.25rem;
+                    background-color: ${theme.colors.backgroundColor3};
                     img {
                         width: 100%;
-                        border-radius: 0.625rem 0.625rem 0 0;
-                        margin-bottom: 0.9375rem;
-                        @media (min-width: ${theme.breakpoints.up.medium}) {
-                            margin-bottom: 1.875rem;
-                        }
-                    }
-                    p {
-                        color: ${theme.colors.titleH2};
-                        margin: 0 0 0.5rem;
-                        @media (min-width: ${theme.breakpoints.up.medium}) {
-                            margin-bottom: 0.5rem;
-                        }
-                    }
-                    span {
-                        color: ${theme.colors.titleH2};
                     }
                 }
-                &__background {
-                    display: none;
-                    position: absolute;
-                    width: 100%;
-                    height: 70%;
-                    bottom: 0;
-                    z-index: 1;
-                    background-color: ${theme.colors.backgroundColor2};
-                    border-radius: 0.625rem;
-                    .add-product {
-                        position: absolute;
-                        bottom: -0.875rem;
-                        left: 45%;
-                        padding: 0.25rem 0.6rem;
-                        font-size: 1rem;
-                        color: ${theme.colors.white};
-                        background-color: ${theme.colors.button};
-                        border-radius: 5rem;
-                        
-                    }
-                    &.active {
-                        display: block;
-                    }
+                p {
+                    color: ${theme.colors.paragraph};
+                    font-size: 1.25rem;
+                    margin-top: 1rem;
+                }
+            }
+        }
+        .product-selected {
+            &-circles {
+                display: flex;
+                justify-content: center;
+                margin: auto;
+                margin-top: ${theme.layout.spaceBetween10};
+                flex-wrap: wrap; /* Allow circles to wrap to the next line if there are many */
+                max-width: 100%; 
+            }
+            &-circle {
+                width: 0.75rem;
+                height: 0.75rem;
+                margin: 0 5px; /* Add spacing on both sides of the circle */
+                border: 1px solid ${theme.colors.paragraph};
+                background-color: ${theme.colors.backgroundColor3};
+                border-radius: 50%; /* Use percentage value for a perfect circle */
+                
+                &.active {
+                    background-color: ${theme.colors.paragraph};
                 }
             }
         }

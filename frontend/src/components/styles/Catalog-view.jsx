@@ -14,7 +14,7 @@ export const SkeletonLoader = styled.div`
     width: 14.375rem;
     height: 18rem;
     border-radius: 0.625rem;
-    background-color: #f0f0f0;
+    background-color: ${theme.colors.backgroundColor3};
     background-image: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
     background-size: 200% 100%;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@ export const SkeletonLoader = styled.div`
     margin-bottom: 2.1875rem;
     padding-bottom: 0.9375rem;
     @media (min-width: ${theme.breakpoints.up.medium}) {
-        width: 20rem;
+        width: 16rem;
         height: 25.875rem;
         padding-bottom: 1.875rem;
     }
@@ -68,6 +68,27 @@ export const CatalogViewContainer = styled.div`
                 color: ${theme.colors.paragraph};
                 font-size: 1.25rem;
                 margin-top: 1rem;
+            }
+        }
+    }
+    .product-selected {
+        &-circles {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            flex-wrap: wrap; /* Allow circles to wrap to the next line if there are many */
+            max-width: 100%; 
+        }
+        &-circle {
+            width: 0.75rem;
+            height: 0.75rem;
+            margin: 0 5px; /* Add spacing on both sides of the circle */
+            border: 1px solid ${theme.colors.paragraph};
+            background-color: ${theme.colors.backgroundColor3};
+            border-radius: 50%; /* Use percentage value for a perfect circle */
+            
+            &.active {
+                background-color: ${theme.colors.paragraph};
             }
         }
     }
