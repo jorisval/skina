@@ -4,9 +4,8 @@ import { HeaderContext } from "../utils/context";
 import Hero from "../../assets/images/hero_image.png";
 import SectionOneImage from "../../assets/images/benefits-image-1.png";
 import SectionTwoImage from "../../assets/images/benefits-image-2.png";
-//import PostImage1 from "../../assets/images/nordic.png";
-//import PostImage2 from "../../assets/images/kruzo.png";
-//import PostImage3 from "../../assets/images/ergonomic.png";
+import PeopleIcon1 from "../../assets/images/people1.png";
+import PeopleIcon2 from "../../assets/images/people2.png";
 import { Link } from "react-router-dom";
 import { HomeContainer } from "../styles/Home";
 
@@ -65,74 +64,24 @@ function Home() {
                     <Link to='/catalog' className="cta-button">ORDER NOW</Link>
                 </div>
             </div>
-            <CatalogView className="products" id="catalogView"/>
-            {/*
-            <div className="benefits-one">
-                <div className="benefits-one__image">
-                    <img src={BeneFirst} alt=""/>
-                </div>
-                <div className="benefits-one__text">
-                    <h2>blog Choose Us</h2>
-                    <p>Recherche de produits, recherche de marchés inexploités, copywriting, boutique shopify, vidéos pour Facebook ads et Tiktok ads etc... Nous nous occupons de tout pour vous.
-                    Notre objectif est de vous décharger de toutes ces tâches pour vous laisser vous occuper de l'essentiel et ainsi faire exploser votre business. </p>
-                    <div className="four-benefits">
-                        <div className="four-benefits__first">
-                            <span className="bi bi-stopwatch"></span>
-                            <h4>Fast & Free Shiping</h4>
-                            <p>Recherche produits, recherche de marchés inexploités, copywriting, boutique shopify</p>
-                        </div>
-                        <div className="four-benefits__second">
-                            <span className="bi bi-bag-fill"></span>
-                            <h4>Easy to shop</h4>
-                            <p>Recherche produits, recherche de marchés inexploités, copywriting, boutique shopify</p>
-                        </div>
-                        <div className="four-benefits__third">
-                            <span className="bi bi-wechat"></span>
-                            <h4>24/7 Support</h4>
-                            <p>Recherche produits, recherche de marchés inexploités, copywriting, boutique shopify</p>
-                        </div>
-                        <div className="four-benefits__fourth">
-                            <span className="bi bi-arrow-repeat"></span>
-                            <h4>Hassle Free Returns</h4>
-                            <p>Recherche produits, recherche de marchés inexploités, copywriting, boutique shopify</p>
-                        </div>
+            <CatalogView className="products" id="catalogView" />
+            <div className="why">
+                <h2>PEOPLE LOVE US</h2>
+                <div className="why__elements">
+                    <div className="why__element">
+                        <img src={PeopleIcon1} alt=""/>
+                        <h4>Nguyen, Shane</h4>
+                        <span>Johnson & Johnson</span>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat.</p>
+                    </div>
+                    <div className="why__element">
+                        <img src={PeopleIcon2} alt=""/>
+                        <h4>Theresa Webb</h4>
+                        <span>Louis Vuitton</span>
+                        <p>Duis sit amet purus sed elit molestie accumsan a a enim. Maecenas vel rhoncus tortor, ac tristique nibh.</p>
                     </div>
                 </div>
             </div>
-            <div className="blog">
-                <div className="blog__posts">
-                    <div className="blog__post">
-                        <div className="image">
-                            <img src={PostImage1} alt=""/>
-                        </div>
-                        <div>
-                        <h4>Nordic Chair</h4>
-                        <p>Nous maîtrisons les meilleurs process et les meilleures stratégies des tops du domaine</p>
-                            <Link to='/blog'>Read more</Link>
-                        </div>
-                    </div>
-                    <div className="blog__post">
-                    <div className="image">
-                            <img src={PostImage2} alt=""/>
-                        </div>
-                        <div>
-                            <h4>Kurozo Aero Chair</h4>
-                        <p>Nous maîtrisons les meilleurs process et les meilleures stratégies des tops du domaine</p>
-                            <Link to='/blog'>Read more</Link>
-                        </div>
-                    </div>
-                    <div className="blog__post">
-                    <div className="image">
-                            <img src={PostImage3} alt=""/>
-                        </div>
-                        <div>
-                        <h4>Ergonomic Chair</h4>
-                        <p>Nous maîtrisons les meilleurs process et les meilleures stratégies des tops du domaine</p>
-                            <Link to='/blog'>Read more</Link>
-                        </div>
-                    </div>
-                </div>
-            </div>*/}
         </HomeContainer>
     )
 }
