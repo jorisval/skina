@@ -14,8 +14,8 @@ const allowedDomains = [
     'http://localhost:3000/',
     'http://localhost:3001',
     'http://localhost:3001/',
-    'https://skina.vercel.app/',
-    'https://skina.vercel.app'
+    'https://skina-shop.vercel.app/',
+    'https://skina-shop.vercel.app'
 ];
   
 
