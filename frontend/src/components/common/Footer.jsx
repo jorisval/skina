@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Logo from "../../assets/images/colored-logo.png";
 import ThankYouPopup from "../pages/Thank-you-newsletter";
+import { BASE_URL } from '../../config';
 
 function Footer() {
     const [showThankYouPopup, setShowThankYouPopup] = useState(false);
@@ -15,7 +16,7 @@ function Footer() {
         }
     
         try {
-            const response = await fetch("http://localhost:3000/api/newsletter", {
+            const response = await fetch(`${BASE_URL}/api/newsletter`, {
                 method: "POST",
                 body: searchParams,
                 headers: {

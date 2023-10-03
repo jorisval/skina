@@ -4,6 +4,7 @@ import CatalogView from "../layout/catalog-view";
 import { ProductContainer, SkeletonImage, SkeletonText, SkeletonOption, SkeletonQuantity, SkeletonProductBody } from "../styles/Product";
 import { CartContext, HeaderContext } from "../utils/context";
 import { useFetch } from "../utils/hooks";
+import { BASE_URL } from '../../config';
 
 function Product() {
     const { setActivePage } = useContext(HeaderContext);
@@ -12,7 +13,7 @@ function Product() {
     }, [setActivePage]);
 
     const { productId } = useParams();
-    const { data, dataIsLoading } = useFetch(`http://localhost:3000/api/catalog/${productId}`);
+    const { data, dataIsLoading } = useFetch(`${BASE_URL}/api/catalog/${productId}`);
     const { orderInfos, setOrderInfos, setOrderItem} = useContext(CartContext);
     const [quantity, setQuantity] = useState(1);
     const [activeOption, setActiveOption] = useState(null);

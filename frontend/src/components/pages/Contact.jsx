@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { HeaderContext } from "../utils/context";
 import ThankYouPopup from "./Thank-you-contact";
 import { ContactContainer } from "../styles/Contact";
+import { BASE_URL } from '../../config';
 
 function Contact() {
     const [showThankYouPopup, setShowThankYouPopup] = useState(false);
@@ -23,7 +24,7 @@ function Contact() {
         }
       
         try {
-            await fetch("http://localhost:3000/api/contact/comment/", {
+            await fetch(`${BASE_URL}/api/contact/comment/`, {
                 method: "POST",
                 body: searchParams,
                 headers: {

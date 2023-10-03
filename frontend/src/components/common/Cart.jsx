@@ -2,6 +2,7 @@ import { useEffect, useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../utils/context";
 import { SkeletonImage, SkeletonQuantity, SkeletonText } from "../styles/Layouts";
+import { BASE_URL } from '../../config';
 
 function Cart() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -36,7 +37,7 @@ function Cart() {
             setIsloading(true);
             const fetchProducts = async () => {
                 const requests = productIds.map((id) =>
-                fetch(`http://localhost:3000/api/catalog/${id}`).then((res) => res.json())
+                fetch(`${BASE_URL}/api/catalog/${id}`).then((res) => res.json())
                 );
                 const products = await Promise.all(requests);
                 setProducts(products);

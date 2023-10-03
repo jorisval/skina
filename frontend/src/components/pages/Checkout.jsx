@@ -16,6 +16,7 @@ import {
 } from '../styles/Checkout';
 import { CartContext } from '../utils/context/index';
 import { useNavigate } from 'react-router-dom';
+import { BASE_URL } from '../../config';
 
 const Checkout = () => {
     const { orderInfos, setOrderInfos, setOrderPlaced } = useContext(CartContext);
@@ -75,7 +76,7 @@ const Checkout = () => {
       updatedOrderInfos.paymentAmount = orderInfos.totalAmount;
     
       try {
-        const response = await fetch('http://localhost:3000/api/order/', {
+        const response = await fetch(`${BASE_URL}/api/order/`, {
           method: "POST",
           body: JSON.stringify(updatedOrderInfos),
           headers: {
