@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/static/js/main.8e8d2327.js",
+    "static/media/hero_image.png": "/static/media/hero_image.c1f16f66a621b3db709f.png",
+    "static/media/benefits-image-2.png": "/static/media/benefits-image-2.1a2713e194d38f091d93.png",
+    "static/media/benefits-image-1.png": "/static/media/benefits-image-1.ad4538c0912ce5c578be.png",
+    "static/media/404-error-pana.svg": "/static/media/404-error-pana.5f4733a74694a2ac9cda6cd3ded4ce69.svg",
+    "static/media/product-1-5-1.png": "/static/media/product-1-5-1.c25d12cab0cb4d0404e7.png",
+    "index.html": "/index.html",
+    "main.8e8d2327.js.map": "/static/js/main.8e8d2327.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.8e8d2327.js"
+  ]
+}

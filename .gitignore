@@ -16,13 +16,6 @@ pids
 node_modules/
 jspm_packages/
 
-# Output files
-dist/
-build/
-out/
-lib/
-*.tsbuildinfo
-*.d.ts
 
 # IDEs and editors
 .vscode/
